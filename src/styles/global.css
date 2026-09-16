@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --colour-carbon: #161616;
+    --colour-graphite: #4a4d52;
+    --colour-pencil: #a4a29d;
+    --colour-drafting: #e8e4da;
+    --colour-paper: #faf7f0;
+    --colour-reference: #1b5a6a;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper font-sans text-carbon antialiased;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    @apply text-reference underline-offset-4;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--colour-reference);
+    outline-offset: 3px;
+  }
+}

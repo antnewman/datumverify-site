@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+.vite
+.netlify
+package-lock.json
